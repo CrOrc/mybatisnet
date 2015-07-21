@@ -225,7 +225,6 @@
   <ItemGroup>
     <ProjectReference Include="..\MyBatis.Common\MyBatis.Common.csproj">
       <Project>{BBC8DA4A-EA88-41D9-8B93-929B8F3ADADE}</Project>
-      <Name>Apache.Ibatis.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
