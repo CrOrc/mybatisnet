@@ -79,7 +79,7 @@ namespace MyBatis.DataMapper.SqlClient.Test.Fixtures.Mapping.Perf
                 ibatis += 1000000 * (stopWatch.ElapsedMilliseconds / (double)n);
                 session.Close();
 
-                System.Console.WriteLine("Objects: " + n + " - iBATIS DataMapper: " + ibatis.ToString("F3"));
+                System.Console.WriteLine("Objects: " + n + " - MyBatis DataMapper: " + ibatis.ToString("F3"));
             }
             System.GC.Collect();
         }
@@ -473,7 +473,7 @@ namespace MyBatis.DataMapper.SqlClient.Test.Fixtures.Mapping.Perf
                 stopWatch.Stop();
                 adonet += 1000000 * (stopWatch.ElapsedMilliseconds / (double)n);
                 connection.Close();
-                System.Console.Out.WriteLine("Objects " + n + " iBATIS DataMapper : " + ibatis.ToString("F3") + " / Direct ADO.NET: " + adonet.ToString("F3") + " Ratio: " + ((ibatis / adonet)).ToString("F3"));
+                System.Console.Out.WriteLine("Objects " + n + " MyBatis DataMapper : " + ibatis.ToString("F3") + " / Direct ADO.NET: " + adonet.ToString("F3") + " Ratio: " + ((ibatis / adonet)).ToString("F3"));
             }
 
             System.GC.Collect();

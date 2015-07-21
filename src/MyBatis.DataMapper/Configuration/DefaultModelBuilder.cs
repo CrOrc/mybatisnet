@@ -97,7 +97,7 @@ namespace MyBatis.DataMapper.Configuration
         #region IModelBuilder Members
 
         /// <summary>
-        /// Builds the the iBATIS core model (statement, alias, resultMap, parameterMap, dataSource)
+        /// Builds the the MyBatis core model (statement, alias, resultMap, parameterMap, dataSource)
         /// from an <see cref="IConfigurationStore"/> and store all the refrences in an <see cref="IModelStore"/> .
         /// </summary>
         /// <param name="configurationSetting">The configuration setting.</param>

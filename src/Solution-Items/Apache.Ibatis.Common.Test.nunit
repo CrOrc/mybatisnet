@@ -1,6 +1,6 @@
 ﻿<NUnitProject>
   <Settings activeconfig="Default" />
   <Config name="Default" binpathtype="Auto">
-    <assembly path="..\Apache.Ibatis.Common.Test\bin\Debug\Apache.Ibatis.Common.Test.dll" />
+    <assembly path="..\MyBatis.Common.Test\bin\Debug\MyBatis.Common.Test.dll" />
   </Config>
 </NUnitProject>

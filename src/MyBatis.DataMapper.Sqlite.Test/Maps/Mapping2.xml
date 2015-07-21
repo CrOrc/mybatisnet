@@ -62,7 +62,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       </dynamic>
     </statement>
 
-    <!-- Apache.Ibatis-114: remapResults -->
+    <!-- MyBatis-114: remapResults -->
     <statement  id="DynamicSqlOnColumnSelection" 
 					parameterClass="Account" 
 					resultClass="Account"

@@ -38,7 +38,7 @@ namespace MyBatis.Common.Test.Fixtures.Logging
 		[Test]
 		public void LogDebug()
 		{
-            string expectedLogOutput = "[DEBUG] Apache.Ibatis.Common.Test.Fixtures.Logging.LogTest - LogDebug";
+            string expectedLogOutput = "[DEBUG] MyBatis.Common.Test.Fixtures.Logging.LogTest - LogDebug";
 			string actualLogOutput = "";
 
 			_log.Debug("LogDebug");
@@ -50,7 +50,7 @@ namespace MyBatis.Common.Test.Fixtures.Logging
 		[Test]
 		public void LogInfo()
 		{
-            string expectedLogOutput = "[INFO]  Apache.Ibatis.Common.Test.Fixtures.Logging.LogTest - LogInfo";
+            string expectedLogOutput = "[INFO]  MyBatis.Common.Test.Fixtures.Logging.LogTest - LogInfo";
 			string actualLogOutput = "";
 
 			_log.Info("LogInfo");
@@ -62,7 +62,7 @@ namespace MyBatis.Common.Test.Fixtures.Logging
 		[Test]
 		public void LogError()
 		{
-            string expectedLogOutput = "[ERROR] Apache.Ibatis.Common.Test.Fixtures.Logging.LogTest - LogError";
+            string expectedLogOutput = "[ERROR] MyBatis.Common.Test.Fixtures.Logging.LogTest - LogError";
 			string actualLogOutput = "";
 
 			_log.Error("LogError");
@@ -74,7 +74,7 @@ namespace MyBatis.Common.Test.Fixtures.Logging
 		[Test]
 		public void LogFatal()
 		{
-            string expectedLogOutput = "[FATAL] Apache.Ibatis.Common.Test.Fixtures.Logging.LogTest - LogFatal";
+            string expectedLogOutput = "[FATAL] MyBatis.Common.Test.Fixtures.Logging.LogTest - LogFatal";
 			string actualLogOutput = "";
 
 			_log.Fatal("LogFatal");
@@ -87,7 +87,7 @@ namespace MyBatis.Common.Test.Fixtures.Logging
 		[Test]
 		public void LogWarn()
 		{
-            string expectedLogOutput = "[WARN]  Apache.Ibatis.Common.Test.Fixtures.Logging.LogTest - LogWarn";
+            string expectedLogOutput = "[WARN]  MyBatis.Common.Test.Fixtures.Logging.LogTest - LogWarn";
 			string actualLogOutput = "";
 
 			_log.Warn("LogWarn");

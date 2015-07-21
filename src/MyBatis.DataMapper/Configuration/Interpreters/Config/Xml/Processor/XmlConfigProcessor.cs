@@ -28,7 +28,7 @@ using MyBatis.Common.Data;
 namespace MyBatis.DataMapper.Configuration.Interpreters.Config.Xml.Processor
 {
     /// <summary>
-    /// Analyse the iBATIS XML configuration and import their configurations in the <see cref="IConfigurationStore"/>
+    /// Analyse the MyBatis XML configuration and import their configurations in the <see cref="IConfigurationStore"/>
     /// </summary>
     public partial class XmlConfigProcessor : BaseXmlProcessor
     {

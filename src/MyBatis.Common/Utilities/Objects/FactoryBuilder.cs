@@ -48,7 +48,7 @@ namespace MyBatis.Common.Utilities.Objects
 		public FactoryBuilder()
 		{
 			AssemblyName assemblyName = new AssemblyName();
-            assemblyName.Name = "iBATIS.EmitFactory" + HashCodeProvider.GetIdentityHashCode(this);
+            assemblyName.Name = "MyBatis.EmitFactory" + HashCodeProvider.GetIdentityHashCode(this);
 
 			// Create a new assembly with one module
 			AssemblyBuilder _assemblyBuilder = AppDomain.CurrentDomain.DefineDynamicAssembly(assemblyName, AssemblyBuilderAccess.Run);

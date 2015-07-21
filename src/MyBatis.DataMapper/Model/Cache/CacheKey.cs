@@ -6,7 +6,7 @@
  * $Date: 2008-10-16 12:14:45 -0600 (Thu, 16 Oct 2008) $
  * 
  * MyBatis.NET Data Mapper
- * Copyright (C) 2005 - iBATIS Team
+ * Copyright (C) 2005 - MyBatis Team
  *  
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");

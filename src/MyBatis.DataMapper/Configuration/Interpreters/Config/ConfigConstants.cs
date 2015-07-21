@@ -28,7 +28,7 @@
 namespace MyBatis.DataMapper.Configuration.Interpreters.Config
 {
     ///<summary>
-    /// Constants for nodes and attributes name in iBATIS configuration
+    /// Constants for nodes and attributes name in MyBatis configuration
     /// </summary>
     public static class ConfigConstants
     {
@@ -584,7 +584,7 @@ namespace MyBatis.DataMapper.Configuration.Interpreters.Config
         /// <summary>
         /// Token to identify the empty parameter map.
         /// </summary>
-        public const string EMPTY_PARAMETER_MAP = "iBATIS.Empty.ParameterMap";
+        public const string EMPTY_PARAMETER_MAP = "MyBatis.Empty.ParameterMap";
 
         #endregion Token element
     }

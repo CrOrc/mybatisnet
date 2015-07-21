@@ -164,8 +164,12 @@
     <Compile Include="Fixtures\Utilities\TypeResolverTest.cs" />
     <Compile Include="Fixtures\Utilities\TypeUtilsTest.cs" />
     <None Include="App.config" />
-    <None Include="bin\Debug\SqlMap_MSSQL_SqlClient.config" />
-    <None Include="bin\Debug\test.config" />
+    <None Include="SqlMap_MSSQL_SqlClient.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="test.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <Content Include="bin\Debug\OctopusService.dll" />
     <Content Include="license.txt" />
     <EmbeddedResource Include="Fixtures\Utilities\sample.txt" />

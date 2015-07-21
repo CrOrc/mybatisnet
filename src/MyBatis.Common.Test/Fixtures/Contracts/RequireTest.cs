@@ -192,7 +192,7 @@ namespace MyBatis.Common.Test.Fixtures.Contracts
         }
 
         [Test]
-        [ExpectedException(typeof(PreConditionException), ExpectedMessage = "Address object should be same as Apache.Ibatis.Common.Test.Domain.Address when checking same")]
+        [ExpectedException(typeof(PreConditionException), ExpectedMessage = "Address object should be same as MyBatis.Common.Test.Domain.Address when checking same")]
         public void Should_raise_exception_when_sameas_not_verified()
         {
             Address address1 = new Address();

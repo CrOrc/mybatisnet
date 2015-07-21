@@ -72,7 +72,8 @@ namespace MyBatis.Common.Resources
             string originalResourceName = resourceUri;
 
             Contract.Require.That(resourceUri, Is.Not.Null & Is.Not.Empty).When("retrieving resourceUri argument in CustomUriBuilder constructor");
-            Contract.Require.That(basePath, Is.Not.Null).When("retrieving basePath argument in CustomUriBuilder constructor");
+
+            //Contract.Require.That(basePath, Is.Not.Null).When("retrieving basePath argument in CustomUriBuilder constructor");
 
             // Remove file:// to better analyse later
             if (resourceUri.StartsWith(FileResourceLoader.Scheme + Uri.SchemeDelimiter))
@@ -98,7 +99,7 @@ namespace MyBatis.Common.Resources
                 try
                 {
 
-                    if (!Path.IsPathRooted(resourceUri) || !Resources.FileExists(resourceUri))
+                    if ((!Path.IsPathRooted(resourceUri) || !Resources.FileExists(resourceUri)) && basePath !=null)
                     {
                         resourceUri = Path.Combine(basePath, resourceUri);
                     }

@@ -38,7 +38,7 @@ namespace MyBatis.Common.Logging
 	/// a <see cref="NameValueCollection" /> which will contain zero or more user supplied configuration
 	/// properties.
 	/// <para>
-	/// The Apache.Ibatis.Common assembly ships with the following built-in <see cref="ILoggerFactoryAdapter" /> implementations:
+	/// The MyBatis.Common assembly ships with the following built-in <see cref="ILoggerFactoryAdapter" /> implementations:
 	/// </para>
 	///	<list type="table">
 	///	<item><term><see cref="ConsoleOutLoggerFA" /></term><description>Writes output to Console.Out</description></item>

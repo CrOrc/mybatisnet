@@ -43,7 +43,7 @@ namespace MyBatis.Common.Test.Fixtures.CommonTests
 		{
 			XmlDocument doc = null;
 
-			doc = Resources.GetEmbeddedResourceAsXmlDocument("Apache.Ibatis.Common.Test.properties.xml, MyBatis.Common.Test");
+			doc = Resources.GetEmbeddedResourceAsXmlDocument("MyBatis.Common.Test.properties.xml, MyBatis.Common.Test");
 
 			Assert.IsNotNull(doc);
 			Assert.IsTrue(doc.HasChildNodes);
@@ -72,7 +72,7 @@ namespace MyBatis.Common.Test.Fixtures.CommonTests
 		[Test] 
 		public void GetFileInfoWithRelative() 
 		{ 
-			FileInfo fileInfo = Resources.GetFileInfo("Apache.Ibatis.Common.Test.dll");
+			FileInfo fileInfo = Resources.GetFileInfo("MyBatis.Common.Test.dll");
 			Assert.IsNotNull(fileInfo);
 		}
 
@@ -80,7 +80,7 @@ namespace MyBatis.Common.Test.Fixtures.CommonTests
 		[Test] 
 		public void GetFileInfoWithAbsolute() 
 		{ 
-			string resourcePath = Resources.ApplicationBase+Path.DirectorySeparatorChar+"Apache.Ibatis.Common.Test.dll";
+			string resourcePath = Resources.ApplicationBase+Path.DirectorySeparatorChar+"MyBatis.Common.Test.dll";
 			FileInfo fileInfo = Resources.GetFileInfo(resourcePath);
 			Assert.IsNotNull(fileInfo);
 		}
@@ -88,7 +88,7 @@ namespace MyBatis.Common.Test.Fixtures.CommonTests
 		[Test] 
 		public void GetFileInfoWithAbsoluteProtocol() 
 		{ 
-			string resourcePath = "file://"+Resources.ApplicationBase+Path.DirectorySeparatorChar+"Apache.Ibatis.Common.Test.dll";
+			string resourcePath = "file://"+Resources.ApplicationBase+Path.DirectorySeparatorChar+"MyBatis.Common.Test.dll";
 			FileInfo fileInfo = Resources.GetFileInfo(resourcePath);
 			Assert.IsNotNull(fileInfo);
 		}
@@ -96,7 +96,7 @@ namespace MyBatis.Common.Test.Fixtures.CommonTests
 		[Test] 
 		public void GetFileInfoWithAbsoluteProtocolPlusSlash() 
 		{ 
-			string resourcePath = "file:///"+Resources.ApplicationBase+Path.DirectorySeparatorChar+"Apache.Ibatis.Common.Test.dll";
+			string resourcePath = "file:///"+Resources.ApplicationBase+Path.DirectorySeparatorChar+"MyBatis.Common.Test.dll";
 			FileInfo fileInfo = Resources.GetFileInfo(resourcePath);
 			Assert.IsNotNull(fileInfo);
 		}

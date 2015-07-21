@@ -103,7 +103,7 @@ namespace MyBatis.Common.Resources
                 catch (Exception e)
                 {
                     throw new ResourceException(
-                        string.Format("iBATIS doesn't have the right to read the config file \"{0}\". Cause : {1}",
+                        string.Format("MyBatis doesn't have the right to read the config file \"{0}\". Cause : {1}",
                         filePath,
                         e.Message), e);
                 }

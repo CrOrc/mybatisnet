@@ -30,14 +30,14 @@ namespace MyBatis.DataMapper.Model
 {
     /// <summary>
     /// The contract used by the <see cref="IConfigurationEngine"/> to build
-    /// all the iBATIS core model (statement, alias, resultMap, parameterMap, dataSource)
+    /// all the MyBatis core model (statement, alias, resultMap, parameterMap, dataSource)
     /// from an <see cref="IConfigurationStore"/> 
     /// </summary>
     public interface IModelBuilder
     {
 
         /// <summary>
-        /// Builds the the iBATIS core model (statement, alias, resultMap, parameterMap, dataSource)
+        /// Builds the the MyBatis core model (statement, alias, resultMap, parameterMap, dataSource)
         /// from an <see cref="IConfigurationStore"/> and store all the refrences in an <see cref="IModelStore"/> .
         /// </summary>
         /// <param name="configurationSetting">The configuration setting.</param>

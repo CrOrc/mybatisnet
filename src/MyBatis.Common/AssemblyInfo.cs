@@ -21,8 +21,8 @@ using System.Security;
     [assembly: AssemblyKeyFile("..\\..\\..\\AssemblyKey.snk")]
 #endif
 
-[assembly: AssemblyTitle("Apache.Ibatis.Common")]
-[assembly: AssemblyDescription("Common object used by DataMapper component in iBATIS")]
+[assembly: AssemblyTitle("MyBatis.Common")]
+[assembly: AssemblyDescription("Common object used by DataMapper component in MyBatis")]
 	
 [assembly: AssemblyVersion("3.0.0")]
 

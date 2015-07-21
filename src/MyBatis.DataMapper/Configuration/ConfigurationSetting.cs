@@ -33,7 +33,7 @@ namespace MyBatis.DataMapper.Configuration
 {
     /// <summary>
     /// The <see cref="ConfigurationSetting"/> class allows the user to set by code some
-    /// setting that will drive the iBATIS engine and his configuration.
+    /// setting that will drive the MyBatis engine and his configuration.
     /// </summary>
     public sealed class ConfigurationSetting
     {

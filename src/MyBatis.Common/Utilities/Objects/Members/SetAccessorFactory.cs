@@ -67,7 +67,7 @@ namespace MyBatis.Common.Utilities.Objects.Members
                 else
                 {
                     AssemblyName assemblyName = new AssemblyName();
-                    assemblyName.Name = "iBATIS.FastSetAccessor" + HashCodeProvider.GetIdentityHashCode(this);
+                    assemblyName.Name = "MyBatis.FastSetAccessor" + HashCodeProvider.GetIdentityHashCode(this);
 
                     // Create a new assembly with one module
                     _assemblyBuilder = AppDomain.CurrentDomain.DefineDynamicAssembly(assemblyName, AssemblyBuilderAccess.Run);

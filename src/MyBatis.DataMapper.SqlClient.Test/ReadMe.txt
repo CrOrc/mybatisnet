@@ -3,7 +3,7 @@ To pass tests for MS Sql Server
 ------------------------------
 1/ Create the database with the script 'scripts\(database name)\DBCreation.sql'
 
-2/ In 'bin/Debug/Apache.Ibatis.DataMapper.SqlClient.Test.dll.config' :
+2/ In 'bin/Debug/MyBatis.DataMapper.SqlClient.Test.dll.config' :
 		set the database value to the name of database server : MSSQL,Oracle, Acces, MySql
 		set the providerType key to a provider :
 			- 'SqlClient' to run test via native .Net provider for Sql Server.

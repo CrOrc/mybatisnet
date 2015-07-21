@@ -35,7 +35,7 @@ using MyBatis.DataMapper.Session;
 namespace MyBatis.DataMapper.Model
 {
     /// <summary>
-    /// Holds all the iBATIS core model (statement, alias, resultMap, parameterMap, dataSource).
+    /// Holds all the MyBatis core model (statement, alias, resultMap, parameterMap, dataSource).
     /// Used by the <see cref="IMapperFactory"/> to build Mapper.
     /// </summary>
     public interface IModelStore

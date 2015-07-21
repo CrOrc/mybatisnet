@@ -42,11 +42,11 @@ namespace MyBatis.Common.Resources
     /// </p>
     /// </remarks>
     /// <example>
-    /// iBATIS V1 
-    /// "Apache.Ibatis.Common.Test.properties.xml, MyBatis.Common.Test"
+    /// MyBatis V1 
+    /// "MyBatis.Common.Test.properties.xml, MyBatis.Common.Test"
     /// 
-    /// iBATIS V2
-    /// assembly://Apache.Ibatis.Common.Test/Apache.Ibatis.Common.Test/properties.xml
+    /// MyBatis V2
+    /// assembly://MyBatis.Common.Test/MyBatis.Common.Test/properties.xml
     /// 
     /// "CompanyName.ProductName.Maps.ISCard.xml, OctopusService"
     /// assembly://OctopusService/CompanyName.ProductName.Maps/ISCard.xml

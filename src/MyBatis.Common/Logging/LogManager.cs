@@ -38,7 +38,7 @@ namespace MyBatis.Common.Logging
 	{
 		private static ILoggerFactoryAdapter _adapter = null;
 		private static readonly object _loadLock = new object();
-		private const string IBATIS_SECTION_LOGGING = "iBATIS/logging";
+		private const string IBATIS_SECTION_LOGGING = "MyBatis/logging";
 
         /// <summary>
         /// Initializes the <see cref="LogManager"/> class.
@@ -54,7 +54,7 @@ namespace MyBatis.Common.Logging
 		/// </summary>
 		/// <remarks>
 		/// <para>
-		/// The Apache.Ibatis.Common assembly ships with the following built-in <see cref="ILoggerFactoryAdapter" /> implementations:
+		/// The MyBatis.Common assembly ships with the following built-in <see cref="ILoggerFactoryAdapter" /> implementations:
 		/// </para>
 		///	<list type="table">
 		///	<item><term><see cref="ConsoleOutLoggerFA" /></term><description>Writes output to Console.Out</description></item>
