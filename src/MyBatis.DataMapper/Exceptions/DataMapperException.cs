@@ -34,7 +34,7 @@ namespace MyBatis.DataMapper.Exceptions
 	/// The DataMapperException is thrown when an error in the SqlMapper component occurs.
 	/// </summary>
 	[Serializable]
-	public class DataMapperException : IbatisException
+	public class DataMapperException : MyBatisException
 	{
 		/// <summary>
 		/// Initializes a new instance of the <see cref="MyBatis.DataMapper.Exceptions.DataMapperException"/> class.

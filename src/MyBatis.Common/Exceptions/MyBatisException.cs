@@ -36,19 +36,19 @@ namespace MyBatis.Common.Exceptions
 	/// This is the base exception for all exceptions thrown in the framework. 
 	/// </remarks>
 	[Serializable]
-	public class IbatisException : ApplicationException
+	public class MyBatisException : ApplicationException
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="IbatisException"/> class.
+		/// Initializes a new instance of the <see cref="MyBatisException"/> class.
 		/// </summary>
 		/// <remarks>
 		/// This constructor initializes the <para>Message</para> property of the new instance 
 		/// to a system-supplied message that describes the error.
 		/// </remarks>
-		public IbatisException() : base("iBatis.NET framework caused an exception.") { }
+		public MyBatisException() : base("iBatis.NET framework caused an exception.") { }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="IbatisException"/> 
+		/// Initializes a new instance of the <see cref="MyBatisException"/> 
 		/// class with a reference to the inner exception that is the cause of this exception.
 		/// </summary>
 		/// <remarks>
@@ -60,10 +60,10 @@ namespace MyBatis.Common.Exceptions
 		/// If the innerException parameter is not a null reference (Nothing in Visual Basic), 
 		/// the current exception is raised in a catch block that handles the inner exception.
 		/// </param>
-		public IbatisException(Exception ex) : base("iBatis.NET framework caused an exception.", ex) {  }
+		public MyBatisException(Exception ex) : base("iBatis.NET framework caused an exception.", ex) {  }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="IbatisException"/> 
+		/// Initializes a new instance of the <see cref="MyBatisException"/> 
 		/// class with a specified error message.
 		/// </summary>
 		/// <remarks>
@@ -71,10 +71,10 @@ namespace MyBatis.Common.Exceptions
 		/// the Message property of the passed in exception. 
 		/// </remarks>
 		/// <param name="message">The message that describes the error.</param>
-		public IbatisException( string message ) : base ( message ) { }
+		public MyBatisException( string message ) : base ( message ) { }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="IbatisException"/> 
+		/// Initializes a new instance of the <see cref="MyBatisException"/> 
 		/// class with a specified error message and a reference to the inner exception 
 		/// that is the cause of this exception.
 		/// </summary>
@@ -86,11 +86,11 @@ namespace MyBatis.Common.Exceptions
 		/// </remarks>
 		/// <param name="message">The message that describes the error.</param>
 		/// <param name="inner">The exception that caused the error</param>
-		public IbatisException( string message, Exception inner ) : base ( message, inner ) { }
+		public MyBatisException( string message, Exception inner ) : base ( message, inner ) { }
 
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="IbatisException"/> 
+		/// Initializes a new instance of the <see cref="MyBatisException"/> 
 		/// class with serialized data.
 		/// </summary>
 		/// <remarks>
@@ -105,7 +105,7 @@ namespace MyBatis.Common.Exceptions
 		/// The <see cref="System.Runtime.Serialization.StreamingContext"/> that contains contextual 
 		/// information about the source or destination. 
 		/// </param>
-		protected IbatisException(SerializationInfo info, StreamingContext context) : base (info, context) {}
+		protected MyBatisException(SerializationInfo info, StreamingContext context) : base (info, context) {}
 
 	}
 }

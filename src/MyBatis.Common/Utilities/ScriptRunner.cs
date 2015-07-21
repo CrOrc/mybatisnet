@@ -164,7 +164,7 @@ namespace MyBatis.Common.Utilities
             }
             catch (Exception e)
             {
-                throw new IbatisException("Unable to execute the sql: " + fileName, e);
+                throw new MyBatisException("Unable to execute the sql: " + fileName, e);
             }
 
         }

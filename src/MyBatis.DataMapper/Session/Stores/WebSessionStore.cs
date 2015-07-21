@@ -83,7 +83,7 @@ namespace MyBatis.DataMapper.Session.Stores
 	
 			if (currentContext == null)
 			{
-				throw new IbatisException("WebSessionStore: Could not obtain reference to HttpContext");
+				throw new MyBatisException("WebSessionStore: Could not obtain reference to HttpContext");
 			}
 			return currentContext;
 		}

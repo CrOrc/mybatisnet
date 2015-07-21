@@ -41,7 +41,7 @@ namespace MyBatis.Common.Exceptions
 	/// When this exception occurs check the .xml or .config file.
 	/// </remarks>
 	[Serializable]
-	public class ConfigurationException : IbatisException
+	public class ConfigurationException : MyBatisException
 	{
 
 		/// <summary>

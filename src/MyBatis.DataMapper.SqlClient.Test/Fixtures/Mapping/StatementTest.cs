@@ -1035,7 +1035,7 @@ namespace MyBatis.DataMapper.SqlClient.Test.Fixtures.Mapping
             {
                 dataMapper.Update("DeleteAccount", new object());
             }
-            catch (IbatisException e)
+            catch (MyBatisException e)
             {
                 Console.WriteLine("TestExecuteUpdateWithParameterClass :" + e.Message);
                 checkForInvalidTypeFailedAppropriately = true;

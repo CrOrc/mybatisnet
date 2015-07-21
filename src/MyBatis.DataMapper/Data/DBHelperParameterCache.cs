@@ -143,7 +143,7 @@ namespace MyBatis.DataMapper.Data
 			}
 			catch(Exception ex)
 			{
-				throw new IbatisException("Could not retrieve parameters for the store procedure named "+command.CommandText, ex);
+				throw new MyBatisException("Could not retrieve parameters for the store procedure named "+command.CommandText, ex);
 			}
 		}
 

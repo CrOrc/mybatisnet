@@ -36,7 +36,7 @@ namespace MyBatis.Common.Exceptions
 	/// This exception is not used by the framework.
 	/// </remarks>
 	[Serializable]
-	public class ForeignKeyException : IbatisException
+	public class ForeignKeyException : MyBatisException
 	{
 		/// <summary>
 		/// Initializes a new instance of the <b>DalException</b> class.

@@ -33,7 +33,7 @@ namespace MyBatis.Common.Exceptions
 	/// Summary description for ProbeException.
 	/// </summary>
     [Serializable]
-	public class ProbeException  : IbatisException
+	public class ProbeException  : MyBatisException
 	{
 		/// <summary>
 		/// Initializes a new instance of the <b>ProbeException</b> class.

@@ -35,7 +35,7 @@ namespace MyBatis.Common.Exceptions
     /// When this exception occurs check the .xml or .config file.
     /// </remarks>
     [Serializable]
-    public class ResourceException : IbatisException
+    public class ResourceException : MyBatisException
     {
         		/// <summary>
 		/// Initializes a new instance of the <see cref="ResourceException"/> class.
