@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<project name="iBATIS.Net" default="test" xmlns="http://nant.sf.net/schemas/nant.xsd">
+<project name="MyBatis.NET" default="test" xmlns="http://nant.sf.net/schemas/nant.xsd">
 
 	<!-- 
 		if nunit2report tasks from http://nunit2report.sourceforge.net/ has been installed
@@ -9,7 +9,7 @@
 	<property name="nunit2report.installed" value="false" />
 
 	<!--
-		Cenqua provided a license of Clover.NET for the iBATIS.NET project to use. 
+		Cenqua provided a license of Clover.NET for the MyBatis.NET project to use. 
 	-->
 	<property name="clover.enabled" value="false" />
     <!--
@@ -21,7 +21,7 @@
 	<property name="NDoc.home" value="C:\Program Files\NDoc 1.3\bin\net\1.1"/>
 
     <!-- global project settings -->
-    <property name="project.name" value="iBATIS.Net" />
+    <property name="project.name" value="MyBatis.NET" />
     <property name="project.version" value="1.1" unless="${property::exists('project.version')}" />
 
     <!-- default configuration -->

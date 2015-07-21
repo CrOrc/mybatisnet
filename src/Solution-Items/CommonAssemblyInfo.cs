@@ -10,7 +10,7 @@ using System.Runtime.CompilerServices;
 // associated with an assembly.
 //
 [assembly: AssemblyCompany("http://ibatis.apache.org/")]
-[assembly: AssemblyProduct("iBATIS.NET")]
+[assembly: AssemblyProduct("MyBatis.NET")]
 [assembly: AssemblyCopyright("Copyright 2006-2008 The Apache Software Foundation")]
 [assembly: AssemblyTrademark("Licensed under the Apache License, Version 2.0")]
 [assembly: AssemblyCulture("")]	

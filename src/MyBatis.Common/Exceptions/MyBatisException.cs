@@ -5,7 +5,7 @@
  * $Revision: 383115 $
  * $Date: 2008-06-28 09:26:16 -0600 (Sat, 28 Jun 2008) $
  * 
- * iBATIS.NET Data Mapper
+ * MyBatis.NET Data Mapper
  * Copyright (C) 2008/2005 - The Apache Software Foundation
  *  
  * 
@@ -45,7 +45,7 @@ namespace MyBatis.Common.Exceptions
 		/// This constructor initializes the <para>Message</para> property of the new instance 
 		/// to a system-supplied message that describes the error.
 		/// </remarks>
-		public MyBatisException() : base("iBatis.NET framework caused an exception.") { }
+		public MyBatisException() : base("MyBatis.NET framework caused an exception.") { }
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="MyBatisException"/> 
@@ -60,7 +60,7 @@ namespace MyBatis.Common.Exceptions
 		/// If the innerException parameter is not a null reference (Nothing in Visual Basic), 
 		/// the current exception is raised in a catch block that handles the inner exception.
 		/// </param>
-		public MyBatisException(Exception ex) : base("iBatis.NET framework caused an exception.", ex) {  }
+		public MyBatisException(Exception ex) : base("MyBatis.NET framework caused an exception.", ex) {  }
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="MyBatisException"/> 

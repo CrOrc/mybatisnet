@@ -5,7 +5,7 @@
  * $Revision: 383115 $
  * $Date: 2008-06-28 09:26:16 -0600 (Sat, 28 Jun 2008) $
  * 
- * iBATIS.NET Data Mapper
+ * MyBatis.NET Data Mapper
  * Copyright (C) 2008/2005 - The Apache Software Foundation
  *  
  * 
@@ -43,7 +43,7 @@ namespace MyBatis.DataMapper.Exceptions
 		/// This constructor initializes the <para>Message</para> property of the new instance 
 		/// to a system-supplied message that describes the error.
 		/// </remarks>
-		public DataMapperException(): base("iBATIS.NET DataMapper component caused an exception.") { }
+		public DataMapperException(): base("MyBatis.NET DataMapper component caused an exception.") { }
 		
 		/// <summary>
 		/// Initializes a new instance of the <see cref="MyBatis.DataMapper.Exceptions.DataMapperException"/> 
@@ -58,7 +58,7 @@ namespace MyBatis.DataMapper.Exceptions
 		/// If the innerException parameter is not a null reference (Nothing in Visual Basic), 
 		/// the current exception is raised in a catch block that handles the inner exception.
 		/// </param>
-		public DataMapperException(Exception ex) : base("iBATIS.NET DataMapper component caused an exception.", ex) {  }
+		public DataMapperException(Exception ex) : base("MyBatis.NET DataMapper component caused an exception.", ex) {  }
 
 
 		/// <summary>

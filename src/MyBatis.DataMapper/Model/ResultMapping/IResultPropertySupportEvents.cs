@@ -4,7 +4,7 @@
  * $LastChangedDate: 2008-06-08 20:20:44 +0200 (dim., 08 juin 2008) $
  * $LastChangedBy: gbayon $
  * 
- * iBATIS.NET Data Mapper
+ * MyBatis.NET Data Mapper
  * Copyright (C) 2008/2005 - The Apache Software Foundation
  *  
  * 

@@ -5,7 +5,7 @@
  * $Revision: 469233 $
  * $Date: 2008-06-28 09:26:16 -0600 (Sat, 28 Jun 2008) $
  * Author : Gilles Bayon
- * iBATIS.NET Data Mapper
+ * MyBatis.NET Data Mapper
  * Copyright (C) 2008/2005 - Apache Fondation
  *  
  * 

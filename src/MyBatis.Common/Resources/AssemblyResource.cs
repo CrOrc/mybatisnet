@@ -4,7 +4,7 @@
  * $LastChangedDate: 2008-10-16 12:14:45 -0600 (Thu, 16 Oct 2008) $
  * $LastChangedBy: gbayon $
  * 
- * iBATIS.NET Data Mapper
+ * MyBatis.NET Data Mapper
  * Copyright (C) 2008/2005 - The Apache Software Foundation
  *  
  * 
@@ -178,7 +178,7 @@ namespace MyBatis.Common.Resources
                 Contract.Assert.That<ResourceException>(stream, Is.Not.Null).When(
                     "getting stream from assembly resource with name = [" + resourceName +
                         "] from assembly [" + assembly + "]. Uri specified is " + uri.OriginalString
-                        +" iBATIS.Net Uri syntax is 'assembly://assemblyName/namespace/resourceName'.");
+                        +" MyBatis.NET Uri syntax is 'assembly://assemblyName/namespace/resourceName'.");
 
                 return stream;
             }

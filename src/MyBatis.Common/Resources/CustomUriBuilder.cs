@@ -4,7 +4,7 @@
  * $LastChangedDate: 2010-03-10 22:08:07 -0700 (Wed, 10 Mar 2010) $
  * $LastChangedBy: mmccurrey $
  * 
- * iBATIS.NET Data Mapper
+ * MyBatis.NET Data Mapper
  * Copyright (C) 2008/2005 - The Apache Software Foundation
  *  
  * 

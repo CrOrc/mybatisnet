@@ -5,7 +5,7 @@
  * $Revision: 383115 $
  * $Date: 2008-05-18 10:02:28 +0200 (dim., 18 mai 2008) $
  * 
- * iBATIS.NET Data Mapper
+ * MyBatis.NET Data Mapper
  * Copyright (C) 2008/2005 - The Apache Software Foundation
  *  
  * 

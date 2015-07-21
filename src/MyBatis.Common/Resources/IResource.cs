@@ -4,7 +4,7 @@
  * $LastChangedDate: 2008-06-28 09:26:16 -0600 (Sat, 28 Jun 2008) $
  * $LastChangedBy: gbayon $
  * 
- * iBATIS.NET Data Mapper
+ * MyBatis.NET Data Mapper
  * Copyright (C) 2008/2005 - The Apache Software Foundation
  *  
  * 
@@ -29,7 +29,7 @@ using System.IO;
 namespace MyBatis.Common.Resources
 {
     /// <summary>
-    /// The central abstraction for iBATIS.NET's access to resources.
+    /// The central abstraction for MyBatis.NET's access to resources.
     /// </summary>
 	public interface IResource : IDisposable
 	{

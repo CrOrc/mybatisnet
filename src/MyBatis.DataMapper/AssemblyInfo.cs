@@ -12,7 +12,7 @@ using System.Security;
 [assembly: CLSCompliant(true)]
 [assembly: AllowPartiallyTrustedCallers]
 [assembly: AssemblyCompany("http://ibatis.apache.org/")]
-[assembly: AssemblyProduct("iBATIS.NET")]
+[assembly: AssemblyProduct("MyBatis.NET")]
 [assembly: AssemblyCopyright("Copyright 2009,2005 The Apache Software Foundation")]
 [assembly: AssemblyTrademark("Licensed under the Apache License, Version 2.0")]
 [assembly: AssemblyCulture("")]
