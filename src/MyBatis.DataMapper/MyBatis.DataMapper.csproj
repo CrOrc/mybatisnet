@@ -53,7 +53,7 @@
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
     <DefineConstants>TRACE;DEBUG;dotnet2</DefineConstants>
-    <DocumentationFile>Apache.Ibatis.DataMapper.xml</DocumentationFile>
+    <DocumentationFile>$(OutputPath)MyBatis.DataMapper.xml</DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <NoStdLib>false</NoStdLib>
@@ -76,7 +76,7 @@
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
     <DefineConstants>TRACE;dotnet2</DefineConstants>
-    <DocumentationFile>IBatisNet.DataMapper.xml</DocumentationFile>
+    <DocumentationFile>$(OutputPath)MyBatis.DataMapper.xml</DocumentationFile>
     <DebugSymbols>false</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <NoStdLib>false</NoStdLib>

@@ -53,7 +53,7 @@
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
     <DefineConstants>TRACE;DEBUG;dotnet2</DefineConstants>
-    <DocumentationFile>IBatisNet.Common.xml</DocumentationFile>
+    <DocumentationFile>$(OutputPath)MyBatisNet.Common.xml</DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <NoStdLib>false</NoStdLib>
@@ -76,7 +76,7 @@
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
     <DefineConstants>TRACE;dotnet2</DefineConstants>
-    <DocumentationFile>IBatisNet.Common.xml</DocumentationFile>
+    <DocumentationFile>$(OutputPath)MyBatisNet.Common.xml</DocumentationFile>
     <DebugSymbols>false</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <NoStdLib>false</NoStdLib>
@@ -185,9 +185,7 @@
     <Compile Include="Exceptions\ForeignKeyException.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Exceptions\IbatisException.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Exceptions\MyBatisException.cs" />
     <Compile Include="Exceptions\ProbeException.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -322,7 +320,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Apache.Ibatis.Common.build" />
+    <None Include="MyBatis.Common.build" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Migration\" />
