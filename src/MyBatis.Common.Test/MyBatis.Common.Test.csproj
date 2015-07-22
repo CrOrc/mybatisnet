@@ -170,7 +170,9 @@
     <None Include="test.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <Content Include="bin\Debug\OctopusService.dll" />
+    <Content Include="OctopusService.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="license.txt" />
     <EmbeddedResource Include="Fixtures\Utilities\sample.txt" />
     <Content Include="Scripts\Access\account-init.sql" />
