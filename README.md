@@ -7,4 +7,4 @@ To use the MyBatis.NET data mapper, you rely on your own objects, XML, and SQL. 
 The MyBatis.NET project is developed and maintained by a team that includes the maintainers of the "iBATIS.net" data mapper.
 
 #Fork
-Fork from code.google.com/p/mybatisnet. Time to start fixing issues.
+Fork from https://code.google.com/p/mybatisnet. Time to start fixing issues.
