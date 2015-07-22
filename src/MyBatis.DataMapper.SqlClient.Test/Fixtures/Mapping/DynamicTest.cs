@@ -37,7 +37,7 @@ namespace MyBatis.DataMapper.SqlClient.Test.Fixtures.Mapping
 
         /// <summary>
         /// Test Dynamic Sql On Column Selection
-        /// JIRA IBATISNET-114
+        /// JIRA MYBATISNET-114
         /// </summary>
         [Test]
         public void TestDynamicSqlOnColumnSelection()

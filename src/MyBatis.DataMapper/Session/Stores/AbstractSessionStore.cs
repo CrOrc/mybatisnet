@@ -33,7 +33,7 @@ namespace MyBatis.DataMapper.Session.Stores
 	/// </summary>
 	public abstract class AbstractSessionStore  : MarshalByRefObject, ISessionStore
 	{
-        const string KEY = "_IBATIS_LOCAL_SQLMAP_SESSION_";
+        const string KEY = "_MYBATIS_LOCAL_SQLMAP_SESSION_";
         /// <summary>
         /// session name
         /// </summary>	    

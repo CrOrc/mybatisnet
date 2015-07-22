@@ -389,7 +389,7 @@ namespace MyBatis.DataMapper.SqlClient.Test.Fixtures.Mapping
         /// <summary>
         /// Test Duplicate Add to Cache
         /// </summary>
-        /// <remarks>IBATISNET-134</remarks>
+        /// <remarks>MYBATISNET-134</remarks>
         [Test]
         public void TestDuplicateAddCache() 
         {

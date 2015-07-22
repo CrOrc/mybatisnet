@@ -149,7 +149,7 @@ namespace MyBatis.Common.Resources
                 {
                     stream = assembly.GetManifestResourceStream(fullResourceName);
 
-                    // JIRA - IBATISNET-103 
+                    // JIRA - MYBATISNET-103 
                     if (stream == null)
                     {
                         stream = assembly.GetManifestResourceStream(resourceName);

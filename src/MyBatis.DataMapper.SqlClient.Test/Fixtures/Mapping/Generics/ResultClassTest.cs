@@ -99,7 +99,7 @@ namespace MyBatis.DataMapper.SqlClient.Test.Fixtures.Mapping.Generics
         }
 
         /// <summary>
-        ///  IBATISNET-25 Error applying ResultMap when using 'Guid' in resultClass
+        ///  MYBATISNET-25 Error applying ResultMap when using 'Guid' in resultClass
         /// </summary>
         [Test] 
         public void TestGuid() 

@@ -64,7 +64,7 @@ namespace MyBatis.DataMapper.SqlClient.Test.Fixtures.Mapping.MSSQL.Generics
 
         /// <summary>
         /// Test statement with properties subtitutions
-        /// (Test for IBATISNET-21 : Property substitutions do not occur inside selectKey statement)
+        /// (Test for MYBATISNET-21 : Property substitutions do not occur inside selectKey statement)
         /// </summary>
         [Test] 
         public void GenericTestInsertCategoryWithProperties()

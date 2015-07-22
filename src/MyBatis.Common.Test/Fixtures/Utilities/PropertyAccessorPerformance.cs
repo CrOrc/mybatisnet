@@ -159,6 +159,7 @@ namespace MyBatis.Common.Test.NUnit.CommonTests.Utilities
             for (int i = 0; i < TEST_ITERATIONS; i++)
             {
                 prop.Int = value;
+                Assert.AreEqual(value,prop.Int);
             }
             timer.Stop();
             double directAccessDuration = 1000000 * (timer.Duration / (double)TEST_ITERATIONS);
@@ -191,6 +192,7 @@ namespace MyBatis.Common.Test.NUnit.CommonTests.Utilities
             {
                 PropertyInfo propertyInfo = (PropertyInfo)reflectionInfo.GetSetter("Int");
                 propertyInfo.SetValue(prop, value, null);
+                Assert.AreEqual(value, prop.Int);
             }
             timer.Stop();
             double reflectionInfoDuration = 1000000 * (timer.Duration / (double)TEST_ITERATIONS);
@@ -206,6 +208,7 @@ namespace MyBatis.Common.Test.NUnit.CommonTests.Utilities
             {
                 PropertyInfo propertyInfo = type.GetProperty("Int", BindingFlags.Public | BindingFlags.SetProperty | BindingFlags.Instance);
                 propertyInfo.SetValue(prop, value, null);
+                Assert.AreEqual(value, prop.Int);
             }
             timer.Stop();
             double reflectionDuration = 1000000 * (timer.Duration / (double)TEST_ITERATIONS);
@@ -222,6 +225,7 @@ namespace MyBatis.Common.Test.NUnit.CommonTests.Utilities
                 type.InvokeMember("Int",
                     BindingFlags.Public | BindingFlags.SetProperty | BindingFlags.Instance,
                     null, prop, new object[] { value });
+                Assert.AreEqual(value, prop.Int);
             }
             timer.Stop();
             double reflectionInvokeMemberDuration = 1000000 * (timer.Duration / (double)TEST_ITERATIONS);

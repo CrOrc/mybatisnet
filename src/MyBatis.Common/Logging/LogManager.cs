@@ -38,7 +38,7 @@ namespace MyBatis.Common.Logging
 	{
 		private static ILoggerFactoryAdapter _adapter = null;
 		private static readonly object _loadLock = new object();
-		private const string IBATIS_SECTION_LOGGING = "MyBatis/logging";
+		private const string MYBATIS_SECTION_LOGGING = "MyBatis/logging";
 
         /// <summary>
         /// Initializes the <see cref="LogManager"/> class.
@@ -121,7 +121,7 @@ namespace MyBatis.Common.Logging
 			LogSetting setting = null;
 			try
 			{
-                setting = (LogSetting)ConfigurationManager.GetSection(IBATIS_SECTION_LOGGING );
+                setting = (LogSetting)ConfigurationManager.GetSection(MYBATIS_SECTION_LOGGING );
 			}
 			catch ( Exception ex )
 			{
