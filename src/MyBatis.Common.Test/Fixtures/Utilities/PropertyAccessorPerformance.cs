@@ -134,7 +134,7 @@ namespace MyBatis.Common.Test.NUnit.CommonTests.Utilities
             Console.WriteLine("{0} property gets on integer...", TEST_ITERATIONS);
             Console.WriteLine("Direct access: \t\t{0} ", directAccessDuration.ToString("F3"));
             Console.WriteLine("IMemberAccessor: \t\t{0} Ratio: {1}", propertyAccessorDuration.ToString("F3"), propertyAccessorRatio.ToString("F3"));
-            Console.WriteLine("IBatisNet ReflectionInfo: \t{0} Ratio: {1}", reflectionInfoDuration.ToString("F3"), reflectionInfoRatio.ToString("F3"));
+            Console.WriteLine("MyBatisNet ReflectionInfo: \t{0} Ratio: {1}", reflectionInfoDuration.ToString("F3"), reflectionInfoRatio.ToString("F3"));
             Console.WriteLine("ReflectionInvokeMember: \t{0} Ratio: {1}", reflectionInvokeMemberDuration.ToString("F3"), reflectionInvokeMemberRatio.ToString("F3"));
             Console.WriteLine("Reflection: \t\t\t{0} Ratio: {1}", reflectionDuration.ToString("F3"), reflectionRatio.ToString("F3"));
         }
@@ -181,7 +181,7 @@ namespace MyBatis.Common.Test.NUnit.CommonTests.Utilities
             double propertyAccessorRatio = propertyAccessorDuration / directAccessDuration;
             #endregion
 
-            #region IBatisNet.Common.Utilities.Object.ReflectionInfo
+            #region MyBatisNet.Common.Utilities.Object.ReflectionInfo
             GC.Collect();
             GC.WaitForPendingFinalizers();
 
@@ -236,7 +236,7 @@ namespace MyBatis.Common.Test.NUnit.CommonTests.Utilities
             Console.WriteLine("{0} property sets on integer...", TEST_ITERATIONS);
             Console.WriteLine("Direct access: \t\t{0} ", directAccessDuration.ToString("F3"));
             Console.WriteLine("IMemberAccessor: \t\t{0} Ratio: {1}", propertyAccessorDuration.ToString("F3"), propertyAccessorRatio.ToString("F3"));
-            Console.WriteLine("IBatisNet ReflectionInfo: \t{0} Ratio: {1}", reflectionInfoDuration.ToString("F3"), reflectionInfoRatio.ToString("F3"));
+            Console.WriteLine("MyBatisNet ReflectionInfo: \t{0} Ratio: {1}", reflectionInfoDuration.ToString("F3"), reflectionInfoRatio.ToString("F3"));
             Console.WriteLine("ReflectionInvokeMember: \t{0} Ratio: {1}", reflectionInvokeMemberDuration.ToString("F3"), reflectionInvokeMemberRatio.ToString("F3"));
             Console.WriteLine("Reflection: \t\t\t{0} Ratio: {1}", reflectionDuration.ToString("F3"), reflectionRatio.ToString("F3"));
         }
