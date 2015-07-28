@@ -28,7 +28,7 @@ using System;
 namespace MyBatis.Common.Resources
 {
     /// <summary>
-    /// Return an <see cref="MyBatis.Common.Utilities.Resources.IResource"/> handle for the
+    /// Return an <see cref="MyBatis.Common.Resources.IResource"/> handle for the
     /// specified resource.
     /// </summary>
     public interface IResourceLoader
@@ -41,12 +41,12 @@ namespace MyBatis.Common.Resources
         bool Accept(Uri uri);
 
         /// <summary>
-        /// Return an <see cref="MyBatis.Common.Utilities.Resources.IResource"/> handle for the
+        /// Return an <see cref="MyBatis.Common.Resources.IResource"/> handle for the
         /// specified URI.
         /// </summary>
         /// <param name="uri">The URI.</param>
         /// <returns>
-        /// An appropriate <see cref="MyBatis.Common.Utilities.Resources.IResource"/> handle.
+        /// An appropriate <see cref="MyBatis.Common.Resources.IResource"/> handle.
         /// </returns>
         IResource Create(Uri uri);
     }
