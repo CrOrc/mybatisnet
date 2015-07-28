@@ -167,9 +167,6 @@
     <None Include="SqlMap_MSSQL_SqlClient.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="test.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <Content Include="OctopusService.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

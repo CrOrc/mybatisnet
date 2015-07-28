@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Threading;
 using MyBatis.Common.Resources;
 using MyBatis.Common.Utilities;
@@ -41,13 +42,18 @@ namespace MyBatis.Common.Test.Fixtures.ConfigWatcher
         /// <summary>
         /// ConfigurationWatcher Test
         /// </summary>
-        [Test] 
-        public void ConfigurationWatcherTest() 
+        [Test] public void ConfigurationWatcherTest()
         {
             //Assembly a = Assembly.GetExecutingAssembly();
             //Uri uri = new System.Uri(a.CodeBase); 
             //string binDirectory = Path.GetDirectoryName(uri.LocalPath);
             string fileName = "test.config";
+            FileInfo fi = new FileInfo(fileName);
+            if (!fi.Exists)
+            {
+                using(FileStream fs=fi.Create());
+            }
+
 
             // Configure a watcher
             ConfigureHandler configureDelegate = new ConfigureHandler( Configure );
