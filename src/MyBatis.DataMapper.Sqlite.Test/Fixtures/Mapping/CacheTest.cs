@@ -27,7 +27,7 @@ namespace MyBatis.DataMapper.Sqlite.Test.Fixtures.Mapping
         [SetUp] 
         public void SetUp() 
         {
-            InitScript(sessionFactory.DataSource, scriptDirectory + "account-init.sql");
+            InitScript(sessionFactory.DataSource, "account-init.sql");
      
         }
 

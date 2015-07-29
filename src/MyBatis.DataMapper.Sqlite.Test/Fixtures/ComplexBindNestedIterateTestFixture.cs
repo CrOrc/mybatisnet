@@ -15,7 +15,7 @@ namespace MyBatis.DataMapper.Sqlite.Test.Fixtures
         {
             LogManager.Adapter = new ConsoleOutLoggerFA(new NameValueCollection());
 
-            InitScript(sessionFactory.DataSource, "../../Scripts/nested-iterate.sql");
+            InitScript(sessionFactory.DataSource, "nested-iterate.sql");
 
             var rules = new Filter
             {
@@ -40,7 +40,7 @@ namespace MyBatis.DataMapper.Sqlite.Test.Fixtures
         {
             LogManager.Adapter = new ConsoleOutLoggerFA(new NameValueCollection());
 
-            InitScript(sessionFactory.DataSource, "../../Scripts/nested-iterate.sql");
+            InitScript(sessionFactory.DataSource, "nested-iterate.sql");
 
             var firstName = "Muppet 3";
             var field2 = 1;

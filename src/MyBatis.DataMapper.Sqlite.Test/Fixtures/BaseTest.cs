@@ -11,6 +11,7 @@ using MyBatis.Common.Logging.Impl;
 using MyBatis.Common.Utilities;
 using MyBatis.DataMapper.Sqlite.Test.Domain;
 using MyBatis.DataMapper.Sqlite.Test.Fixtures.Modules;
+using MyBatis.DataMapper.Sqlite.Test.Helpers;
 using NUnit.Framework;
 
 namespace MyBatis.DataMapper.Sqlite.Test.Fixtures
@@ -31,6 +32,7 @@ namespace MyBatis.DataMapper.Sqlite.Test.Fixtures
         {
             LogManager.Adapter = new ConsoleOutLoggerFA(new NameValueCollection());
             configurationSetting = new ConfigurationSetting();
+            configurationSetting.Properties["basePath"] = basePath;
             configurationSetting.Properties.Add("collection2Namespace", "MyBatis.DataMapper.Sqlite.Test.Domain.LineItemCollection2, MyBatis.DataMapper.Sqlite.Test");
             configurationSetting.Properties.Add("nullableInt", "int?");
 
@@ -50,29 +52,6 @@ namespace MyBatis.DataMapper.Sqlite.Test.Fixtures
         protected virtual void TestFixtureTearDown()
         {
             dataMapper = null;
-        }
-
-        /// <summary>
-        /// Run a sql batch for the datasource.
-        /// </summary>
-        /// <param name="datasource">The datasource.</param>
-        /// <param name="script">The sql batch</param>
-        public static void InitScript(IDataSource datasource, string script)
-        {
-            InitScript(datasource, script, true);
-        }
-
-        /// <summary>
-        /// Run a sql batch for the datasource.
-        /// </summary>
-        /// <param name="datasource">The datasource.</param>
-        /// <param name="script">The sql batch</param>
-        /// <param name="doParse">parse out the statements in the sql script file.</param>
-        protected static void InitScript(IDataSource datasource, string script, bool doParse)
-        {
-            ScriptRunner runner = new ScriptRunner();
-
-            runner.RunScript(datasource, script, doParse);
         }
 
         /// <summary>

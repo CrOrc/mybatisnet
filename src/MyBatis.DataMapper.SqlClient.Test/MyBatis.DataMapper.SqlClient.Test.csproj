@@ -51,6 +51,24 @@
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -93,6 +111,7 @@
     <Compile Include="Fixtures\Modules\AliasModule.cs" />
     <Compile Include="Fixtures\Modules\EventModule.cs" />
     <Compile Include="Fixtures\ScriptBase.cs" />
+    <Compile Include="Helpers\Utility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Domain\A.cs" />
     <Compile Include="Domain\Account.cs" />
@@ -179,7 +198,9 @@
     <None Include="bin\Debug\SqlMap_StatementOnly.config" />
     <None Include="bin\Debug\test.config" />
     <EmbeddedResource Include="bin\Debug\SqlMap_Test_Configure.config" />
-    <EmbeddedResource Include="bin\Debug\SqlMap.config" />
+    <EmbeddedResource Include="bin\Debug\SqlMap.config">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="bin\Debug\providers.config" />
   </ItemGroup>
   <ItemGroup>

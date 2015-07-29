@@ -14,7 +14,7 @@ namespace MyBatis.DataMapper.Sqlite.Test.Fixtures
         {
             LogManager.Adapter = new ConsoleOutLoggerFA(new NameValueCollection());
 
-            InitScript(sessionFactory.DataSource, "../../Scripts/account-init.sql");
+            InitScript(sessionFactory.DataSource, "account-init.sql");
 
             ICollection items = dataMapper.QueryForList("Account.GetAllAccounts1", null);
             Assert.IsTrue(items.Count > 1);

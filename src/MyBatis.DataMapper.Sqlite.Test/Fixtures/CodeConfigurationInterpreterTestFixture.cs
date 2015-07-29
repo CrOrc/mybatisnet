@@ -6,6 +6,7 @@ using MyBatis.DataMapper.Configuration.Interpreters.Config.Xml;
 using MyBatis.Common.Configuration;
 using MyBatis.Common.Data;
 using MyBatis.DataMapper.Sqlite.Test.Domain;
+using MyBatis.DataMapper.Sqlite.Test.Helpers;
 using NUnit.Framework;
 
 namespace MyBatis.DataMapper.Sqlite.Test.Fixtures
@@ -56,7 +57,7 @@ namespace MyBatis.DataMapper.Sqlite.Test.Fixtures
             CodeConfigurationInterpreter codeConfig = new CodeConfigurationInterpreter(engine.ConfigurationStore);
             codeConfig.AddDatabase(new SqliteDbProvider(), "Data Source=ibatisnet.sqlite;Version=3;");
             codeConfig.AddAlias(typeof(Account), "Account");
-            codeConfig.AddSqlMap("file://../../Maps/Account.xml", true);
+            codeConfig.AddSqlMap(string.Format("file://{0}Maps/Account.xml", basePath), true);
 
             engine.RegisterInterpreter(codeConfig);
             IMapperFactory mapperFactory = engine.BuildMapperFactory();
@@ -75,7 +76,7 @@ namespace MyBatis.DataMapper.Sqlite.Test.Fixtures
             assertConfiguration(baseStore.Statements, store.Statements);
             assertConfiguration(baseStore.ParameterMaps, store.ParameterMaps);
 
-            InitScript(sessionFactory.DataSource, "../../Scripts/account-init.sql");
+            InitScript(sessionFactory.DataSource, "account-init.sql");
 
             ICollection items = localDataMapper.QueryForList("Account.GetAllAccounts1", null);
             Assert.IsTrue(items.Count > 1);

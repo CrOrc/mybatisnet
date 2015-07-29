@@ -12,7 +12,7 @@ using NUnit.Framework;
 namespace MyBatis.DataMapper.Sqlite.Test.Fixtures.Modules
 {
     [TestFixture]
-    public class ResultMapModuleTest
+    public class ResultMapModuleTest: ScriptBase
     {
         protected IDataMapper dataMapper = null;
 
@@ -23,7 +23,6 @@ namespace MyBatis.DataMapper.Sqlite.Test.Fixtures.Modules
         protected virtual void SetUpFixture()
         {
             string resource = "SqlMap_StatementOnly.config";
-            string scriptDirectory = Path.Combine(Path.Combine(Path.Combine(Resources.ApplicationBase, ".."), ".."), "Scripts") + Path.DirectorySeparatorChar;
 
             try
             {
@@ -38,7 +37,7 @@ namespace MyBatis.DataMapper.Sqlite.Test.Fixtures.Modules
 
                 dataMapper = ((IDataMapperAccessor)mapperFactory).DataMapper;
                 ISessionFactory sessionFactory = engine.ModelStore.SessionFactory;
-                BaseTest.InitScript(sessionFactory.DataSource, scriptDirectory + "account-init.sql");
+                InitScript(sessionFactory.DataSource, "account-init.sql");
 
             }
             catch (Exception ex)
