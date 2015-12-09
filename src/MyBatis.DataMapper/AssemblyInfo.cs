@@ -20,8 +20,8 @@ using System.Security;
 #if DEBUG
 #else
 [assembly: AssemblyConfiguration("net-2.0.win32; Release")]
-[assembly: AssemblyDelaySign(false)]
-[assembly: AssemblyKeyFile("..\\..\\..\\AssemblyKey.snk")]
+//[assembly: AssemblyDelaySign(false)]
+//[assembly: AssemblyKeyFile("..\\..\\..\\AssemblyKey.snk")]
 #endif
 
 

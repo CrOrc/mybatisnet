@@ -12,8 +12,7 @@
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
     <AssemblyName>MyBatis.DataMapper</AssemblyName>
-    <AssemblyOriginatorKeyFile>
-    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\Solution-Items\AssemblyKey.snk</AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
@@ -114,6 +113,9 @@
     <PlatformTarget>x86</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Core, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
@@ -681,6 +683,9 @@
     <Content Include="licence.txt" />
     <Content Include="notice.txt" />
     <Content Include="ReadMe.txt" />
+    <None Include="..\Solution-Items\AssemblyKey.snk">
+      <Link>AssemblyKey.snk</Link>
+    </None>
     <None Include="Configuration\Module\ModuleDiagram.cd" />
     <None Include="DataMapperDiagram.cd" />
     <None Include="MappedStatements\ResultStrategy\ClassDiagram.cd" />
