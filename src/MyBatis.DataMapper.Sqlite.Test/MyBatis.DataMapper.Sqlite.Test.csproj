@@ -219,6 +219,7 @@
     <EmbeddedResource Include="providers.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="Scripts\account-init.sql" />
   </ItemGroup>
   <ItemGroup>
