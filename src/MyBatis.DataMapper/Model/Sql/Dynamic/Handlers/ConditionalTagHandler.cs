@@ -28,13 +28,17 @@
 #region Imports
 
 using System;
-using System.Linq;
 using System.Text;
 using MyBatis.Common.Utilities.Objects;
 using MyBatis.Common.Utilities.Objects.Members;
 using MyBatis.DataMapper.Exceptions;
+using MyBatis.DataMapper.Model.Binding;
 using MyBatis.DataMapper.Model.Sql.Dynamic.Elements;
 using MyBatis.DataMapper.Model.Sql.Dynamic.Parsers;
+
+#if dotnet35
+using System.Linq;
+#endif
 
 #endregion Imports
 
@@ -290,9 +294,16 @@ namespace MyBatis.DataMapper.Model.Sql.Dynamic.Handlers
 
             if (String.IsNullOrEmpty(tag.CompareProperty))
                 return null;
-
-            var bindingReplacement = ctx.BuildComparePropertyBindingReplacements(tag).FirstOrDefault();
-
+#if dotnet35
+            BindingReplacement bindingReplacement = ctx.BuildComparePropertyBindingReplacements(tag).FirstOrDefault();
+#else
+            BindingReplacement bindingReplacement = null;
+            foreach (var replacement in ctx.BuildComparePropertyBindingReplacements(tag))
+            {
+                bindingReplacement = replacement;
+                break;
+            }
+#endif
             if (bindingReplacement != null)
             {
                 if (String.IsNullOrEmpty(bindingReplacement.FullPropertyName))
@@ -321,9 +332,16 @@ namespace MyBatis.DataMapper.Model.Sql.Dynamic.Handlers
         {
             if (String.IsNullOrEmpty(baseTag.Property))
                 return parameterObject;
-
+#if dotnet35
             var bindingReplacement = ctx.BuildPropertyBindingReplacements(baseTag).FirstOrDefault();
-
+#else
+            BindingReplacement bindingReplacement = null;
+            foreach (var replacement in ctx.BuildPropertyBindingReplacements(baseTag))
+            {
+                bindingReplacement = replacement;
+                break;
+            }
+#endif
             if (bindingReplacement != null)
             {
                 if (String.IsNullOrEmpty(bindingReplacement.FullPropertyName))

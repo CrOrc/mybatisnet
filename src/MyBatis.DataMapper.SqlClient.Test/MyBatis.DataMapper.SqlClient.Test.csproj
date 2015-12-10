@@ -196,7 +196,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\SqlMap_StatementOnly.config" />
-    <None Include="bin\Debug\test.config" />
+    <None Include="bin\Debug\test.config">
+      <SubType>Designer</SubType>
+    </None>
     <EmbeddedResource Include="bin\Debug\SqlMap_Test_Configure.config" />
     <EmbeddedResource Include="bin\Debug\SqlMap.config">
       <SubType>Designer</SubType>

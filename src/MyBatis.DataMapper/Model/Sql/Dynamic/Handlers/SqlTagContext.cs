@@ -28,12 +28,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using MyBatis.DataMapper.Model.Binding;
 using MyBatis.DataMapper.Model.ParameterMapping;
 using MyBatis.DataMapper.Model.Sql.Dynamic.Elements;
 using MyBatis.DataMapper.Model.Sql.Dynamic.Parsers;
+#if dotnet35
+using System.Linq;
+#endif
 
 namespace MyBatis.DataMapper.Model.Sql.Dynamic.Handlers
 {
@@ -217,8 +219,19 @@ namespace MyBatis.DataMapper.Model.Sql.Dynamic.Handlers
         {
             if (String.IsNullOrEmpty(bindName))
                 throw new ArgumentNullException("bindName");
-
-            var binding = _bindings.SingleOrDefault(w => w.Name == bindName);
+#if dotnet35
+            var binding = _bindings.FirstOrDefault(w => w.Name == bindName);
+#else
+            BindingExpression binding = null;
+            foreach (var w in _bindings)
+            {
+                if (w.Name == bindName)
+                {
+                    binding = w;
+                    break;
+                }
+            }
+#endif
 
             return binding;
         }
