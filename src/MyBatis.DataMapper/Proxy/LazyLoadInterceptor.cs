@@ -30,7 +30,7 @@ using System;
 using System.Collections;
 using System.Reflection;
 using MyBatis.DataMapper.MappedStatements;
-using Castle.Core.Interceptor;
+using Castle.DynamicProxy;
 using MyBatis.Common.Logging;
 using MyBatis.Common.Utilities.Objects.Members;
 
