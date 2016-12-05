@@ -8,7 +8,7 @@ using System;
 namespace MyBatis.DataMapper.Sqlite.Test.Fixtures
 {
     [TestFixture] 
-    public class DefaultModelBuilderTest
+    public class DefaultModelBuilderTest: BaseTest
     {
 
         /// <summary>
